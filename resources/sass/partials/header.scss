@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  height: 40px;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $blue;
+  padding: 0 20px;
+  a {
+    text-decoration: none;
+    transition: 0.3s all;
+    padding: 0 25px;
+    color: $white;
+    line-height: 40px;
+    display: block;
+    &:hover {
+      background-color: $white;
+      color: $blue;
+    }
+  }
+  &--link {
+    font-weight: bold;
+  }
+  &--links {
+    display: flex;
+    a {
+      margin: 0 15px;
+    }
+    a:nth-child(1) {
+      margin-left: 0px;
+    }
+    a:nth-last-child(-n+1) {
+      margin-right: 0px;
+    }
+  }
+}

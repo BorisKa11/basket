@@ -1,0 +1,69 @@
+.card {
+  position: relative;
+  max-width: 320px;
+  margin: 50px auto 0;
+  background-color: $blue;
+  color: $white;
+  border-radius: 15px;
+  padding: 0 20px 20px;
+  @media(max-width: 768px) {
+    margin-top: 25px;
+  }
+  &-header {
+    font-size: 1.2em;
+    padding: 10px 20px 10px;
+    margin: 0 -20px 10px;
+    background-color: $white;
+    color: $blue;
+    border: 2px solid $blue;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+  }
+  .form {
+    label {
+      display: block;
+      font-weight: bolder;
+      font-size: 0.9em;
+    }
+    input[type="email"], input[type="text"], input[type="password"] {
+      display: block;
+      outline: none;
+      font-size: 1.8em;
+      padding: 6px 12px;
+      border-radius: 12px;
+      max-width: 100%;
+      margin: 5px 0 15px;
+    }
+    .form-check {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      margin-bottom: 20px;
+      label {
+        display: inline-block;
+        font-weight: bolder;
+        margin-left: 10px;
+      }
+    }
+    button {
+      display: block;
+      outline: none;
+      font-size: 1.5em;
+      padding: 6px 12px;
+      border-radius: 12px;
+      max-width: 100%;
+      margin: 5px 0 15px;
+      transition: 0.1s all;
+      cursor: pointer;
+      color: $blue;
+      &:hover {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4),
+        inset 2px 2px 2px rgba(0, 0, 0, 0.4);
+      }
+    }
+    a.btn-link {
+      color: $white;
+
+    }
+  }
+}

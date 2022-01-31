@@ -1,0 +1,21 @@
+#errorsShow {
+  position: fixed;
+  top: 15%;
+  right: 50px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: none;
+  font-size: smaller;
+  width: 300px;
+  z-index: 10000;
+  color: white;
+  &.success {
+    background-color: $success;
+  }
+  &.error {
+    background-color: $red;
+  }
+  &.info {
+    background-color: $info;
+  }
+}

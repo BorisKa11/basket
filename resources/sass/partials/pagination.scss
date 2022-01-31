@@ -1,0 +1,41 @@
+.pagination {
+  margin: 25px 0;
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    a {
+      padding: 6px 12px;
+      background-color: $blue;
+      color: $white;
+      border-radius: 6px;
+      margin: 0 5px;
+      font-size: 1.3em;
+      transition: 0.3s all;
+      text-decoration: none;
+      border: 2px solid $blue;
+      &:hover {
+        color: $blue;
+        background-color: $white;
+      }
+    }
+    span {
+      &.dots {
+        padding: 6px 12px;
+        font-size: 1.3em;
+      }
+    }
+    li.active {
+      span {
+        padding: 6px 12px;
+        font-size: 1.3em;
+        color: $blue;
+        font-weight: bolder;
+        border-radius: 6px;
+        margin: 0 5px;
+        border: 2px solid $blue;
+      }
+    }
+  }
+}

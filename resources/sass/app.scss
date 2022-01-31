@@ -1,0 +1,17 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Global
+@import "./pages/global";
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/form";
+@import "./partials/pagination";
+@import "./partials/alert";
+
+// Pages
+@import "./pages/main";
+@import "./pages/basket";
